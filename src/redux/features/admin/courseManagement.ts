@@ -34,10 +34,18 @@ const courseManagement = baseApi.injectEndpoints({
         body: data,
       }),
     }),
+    updateRegisteredSemester: builder.mutation({
+      query: (args) => ({
+        url: `/semester-registrations/${args.id}`,
+        method: "PATCH",
+        body: args.data,
+      }),
+    }),
   }),
 });
 
 export const {
   useAddRegisteredSemesterMutation,
   useGetAllRegisteredSemestersQuery,
+  useUpdateRegisteredSemesterMutation,
 } = courseManagement;
