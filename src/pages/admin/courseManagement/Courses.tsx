@@ -66,7 +66,7 @@ const AddFacultyModal = ({ facultyInfo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
   const { data: facultiesData } = useGetAllFacultiesQuery(undefined);
   const [addFaculties] = useAddFacultiesMutation();
-
+    
   const facultiesOption = facultiesData?.data?.map((item) => ({
     value: item._id,
     label: item.fullName,

@@ -1,11 +1,9 @@
-import React from 'react';
-
 const OfferedCourses = () => {
     return (
-        <div>
-            
-        </div>
+      <div>
+        <h1> This is OfferedCourses component </h1>
+      </div>
     );
-};
-
-export default OfferedCourses;
+  };
+  
+  export default OfferedCourses;
