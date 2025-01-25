@@ -10,12 +10,12 @@ import CreateAcademicFaculty from '../pages/admin/academicManagement/CreateAcade
 import CreateAcademicSemester from '../pages/admin/academicManagement/CreateAcademicSemester';
 import StudentData from '../pages/admin/userManagement/StudentData';
 import StudentDetails from '../pages/admin/userManagement/StudentDetails';
-import OfferedCourse from '../pages/student/OfferedCourse';
-import OfferCourse from '../pages/admin/courseManagement/OfferCourse';
+import SemesterRegistration from '../pages/admin/courseManagement/SemesterRegistration';
 import RegisteredSemesters from '../pages/admin/courseManagement/RegisteredSemesters';
 import CreateCourse from '../pages/admin/courseManagement/CreateCourse';
 import Courses from '../pages/admin/courseManagement/Courses';
-import SemesterRegistration from '../pages/admin/courseManagement/SemesterRegistration';
+import OfferCourse from '../pages/admin/courseManagement/OfferCourse';
+import OfferedCourses from '../pages/admin/courseManagement/OfferedCourses';
 
 export const adminPaths = [
   {
@@ -124,7 +124,7 @@ export const adminPaths = [
       {
         name: 'Offered Courses',
         path: 'offered-courses',
-        element: <OfferedCourse />,
+        element: <OfferedCourses />,
       },
     ],
   },
